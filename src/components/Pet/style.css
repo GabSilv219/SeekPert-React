@@ -12,11 +12,66 @@
   --grey: #a1a1a1;
   --lightGrey: #CCCCCC;
   --darkGrey: #737373;
-  --error: #ff375b;
+  --error: #ff0000;
   --data: #838899;
   --background: #EFECF4;
   --green: #008069;
   --greenHover: #00a884;
+}
+
+.error {
+  margin-top: 100px;
+  margin-bottom: 480px;
+  font-size: 30px;
+  color: var(--error);
+}
+
+.desaparecido{
+  margin-top: 50px;
+  background-color: var(--error);
+  padding: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.msgDesaparecido{
+  font-size: 15px;
+  color: var(--white);
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.recompensa{
+  background-color: var(--greenHover);
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.recompensa-text{
+  font-size: 15px;
+  color: var(--white);
+  font-weight: bold;
+  white-space: nowrap;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.contato{
+  border: 2px solid var(--error);
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.contato-text{
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--error);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  white-space: nowrap;
 }
 
 .loading {
@@ -75,7 +130,7 @@
 }
 
 .info {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .title-pet{
@@ -97,6 +152,15 @@
   height: 300px;
   border-radius: 150px;
   border: 5px solid var(--primary);
+  margin-bottom: 30px;
+  box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.3);;
+}
+
+.foto-desaparecido{
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  border: 5px solid var(--error);
   margin-bottom: 30px;
   box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.3);;
 }
@@ -195,6 +259,14 @@
     border: 5px solid var(--primary);
     margin-bottom: 30px;
   }
+
+  .foto-desaparecido{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    border: 5px solid var(--error);
+    margin-bottom: 30px;
+  }
   
   .data h3 {
     font-size: 16px;
@@ -228,6 +300,18 @@
     font-size: 40px;
   }
 
+  .msgDesaparecido{
+    font-size: 25px;
+  }
+
+  .recompensa-text{
+    font-size: 25px;
+  }
+
+  .contato{
+    font-size: 20px;
+  }
+
   .title-pet{
     font-size: 30px;
   }
@@ -258,6 +342,13 @@
     margin-bottom: 50px;
   }
 
+  .foto-desaparecido {
+    width: 250px;
+    height: 250px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
   .footer span {
     font-size: 20px;
   }
@@ -267,12 +358,57 @@
 }
 /* For large devices */
 @media screen and (min-width: 1150px){
+  .fieldRow{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: -50px;
+  }
+
+  .desaparecido {
+    margin-right: 500px;
+    margin-left: 50px;
+  }
+
+  .msgDesaparecido{
+    font-size: 30px;
+    margin-right: 200px;
+    margin-left: 200px;
+  }
+
+  .recompensa{
+    padding: 5px;
+    margin-top: 110px;
+  }
+  
+  .recompensa-text{
+    font-size: 30px;
+  }
+
+  .contato{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-right: 890px;
+    margin-left: 50px;
+    margin-bottom: -60px;
+  }
+
+  .contato-text{
+    font-size: 25px;
+  }
+
   .loading {
     font-size: 50px;
   }
 
   .info{
     border: 2px solid var(--grey);
+    border-radius:  12px;
+    margin-top: 100px;
+  }
+
+  .info-desaparecido{
+    border: 2px solid var(--error);
     border-radius:  12px;
     margin-top: 100px;
   }
@@ -285,6 +421,14 @@
   }
 
   .foto {
+    width: 360px;
+    height: 350px;
+    border-radius: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .foto-desaparecido {
     width: 360px;
     height: 350px;
     border-radius: 200px;
