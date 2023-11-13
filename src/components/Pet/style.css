@@ -258,6 +258,7 @@
     border-radius: 150px;
     border: 5px solid var(--primary);
     margin-bottom: 30px;
+    margin-top: 10px;
   }
 
   .foto-desaparecido{
@@ -266,6 +267,7 @@
     border-radius: 150px;
     border: 5px solid var(--error);
     margin-bottom: 30px;
+    margin-top: 10px;
   }
   
   .data h3 {
